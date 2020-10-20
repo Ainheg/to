@@ -14,11 +14,11 @@ public class Order {
     private int id;
 
     @ManyToOne
-    @JoinColumn(name = "customer_id", insertable = false, nullable = false)
+    @JoinColumn(name = "customer_id", nullable = false)
     private Customer customer;
 
     @ManyToOne
-    @JoinColumn(name = "employee_id", insertable = false, nullable = false)
+    @JoinColumn(name = "employee_id", nullable = false)
     private Employee employee;
 
     @OneToOne
@@ -29,7 +29,7 @@ public class Order {
     private Timestamp placingDate;
 
     @OneToMany
-    @JoinColumn(name = "order_id")
+    @JoinColumn(name = "order_")
     private Set<Item> items;
 
     public Order() {
@@ -39,8 +39,16 @@ public class Order {
         return customer;
     }
 
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
+
     public Employee getEmployee() {
         return employee;
+    }
+
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
     }
 
     public Shipment getShipment() {
@@ -66,4 +74,5 @@ public class Order {
     public void setItems(Set<Item> items) {
         this.items = items;
     }
+
 }

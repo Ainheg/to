@@ -11,26 +11,33 @@ public class Item {
     private int id;
 
     @ManyToOne
-    @JoinColumn(name = "order_id", insertable = false, nullable = false)
-    private Order order;
+    @JoinColumn(name = "order_id", nullable = false)
+    private Order order_;
 
     @ManyToOne
-    @JoinColumn(name = "product_id", insertable = false, nullable = false)
+    @JoinColumn(name = "product_id", nullable = false)
     private Product product;
 
     @Column(name = "quantity")
     private Double quantity;
 
     public Item() {
-
     }
 
     public Order getOrder() {
-        return order;
+        return order_;
+    }
+
+    public void setOrder(Order order) {
+        this.order_ = order;
     }
 
     public Product getProduct() {
         return product;
+    }
+
+    public void setProduct(Product product) {
+        this.product = product;
     }
 
     public Double getQuantity() {

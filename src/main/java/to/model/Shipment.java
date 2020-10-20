@@ -11,7 +11,7 @@ public class Shipment {
     private int id;
 
     @OneToOne
-    @JoinColumn(name = "order_id", insertable = false, nullable = false)
+    @JoinColumn(name = "order_id", nullable = false)
     private Order order;
 
     @Column(name = "address")
@@ -22,6 +22,10 @@ public class Shipment {
 
     public Order getOrder() {
         return order;
+    }
+
+    public void setOrder(Order order) {
+        this.order = order;
     }
 
     public String getAddress() {

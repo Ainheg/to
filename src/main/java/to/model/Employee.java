@@ -24,8 +24,7 @@ public class Employee {
     @Column(name = "phone_number")
     private String phoneNumber;
 
-    @OneToMany
-    @JoinColumn(name = "employee_id")
+    @OneToMany(mappedBy = "employee", cascade = CascadeType.ALL)
     private Set<Order> orders;
 
     public Employee() {

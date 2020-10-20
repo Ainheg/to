@@ -1,0 +1,84 @@
+2020-10-20 14:42:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ITEMS (ID INTEGER NOT NULL, QUANTITY DOUBLE, ORDER_ID INTEGER NOT NULL, PRODUCT INTEGER NOT NULL, ORDER[*] INTEGER, PRIMARY KEY (ID))"; expected "identifier"; SQL statement:
+create table ITEMS (id integer not null, quantity double, order_id integer not null, product integer not null, order integer, primary key (id)) [42001-200]
+2020-10-20 14:42:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+alter table ITEMS add constraint FKsdrhj7c1j4jmtofdfsic7df21 foreign key (order_id) references ORDERS [42102-200]
+2020-10-20 14:42:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+alter table ITEMS add constraint FK8y5igib0mq1mccni9idgysu6t foreign key (product) references PRODUCTS [42102-200]
+2020-10-20 14:42:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE ITEMS ADD CONSTRAINT FK12CHXWFHIY28776M9YLSXNXYA FOREIGN KEY (ORDER[*]) REFERENCES ORDERS"; expected "identifier"; SQL statement:
+alter table ITEMS add constraint FK12chxwfhiy28776m9ylsxnxya foreign key (order) references ORDERS [42001-200]
+2020-10-20 14:42:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+insert into ITEMS (order_id, product, quantity, id) values (?, ?, ?, ?) [42102-200]
+2020-10-20 14:44:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ITEMS (ID INTEGER NOT NULL, QUANTITY DOUBLE, ORDER_ID INTEGER NOT NULL, PRODUCT INTEGER NOT NULL, ORDER[*] INTEGER, PRIMARY KEY (ID))"; expected "identifier"; SQL statement:
+create table ITEMS (id integer not null, quantity double, order_id integer not null, product integer not null, order integer, primary key (id)) [42001-200]
+2020-10-20 14:44:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+alter table ITEMS add constraint FKsdrhj7c1j4jmtofdfsic7df21 foreign key (order_id) references ORDERS [42102-200]
+2020-10-20 14:44:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+alter table ITEMS add constraint FK8y5igib0mq1mccni9idgysu6t foreign key (product) references PRODUCTS [42102-200]
+2020-10-20 14:44:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE ITEMS ADD CONSTRAINT FK12CHXWFHIY28776M9YLSXNXYA FOREIGN KEY (ORDER[*]) REFERENCES ORDERS"; expected "identifier"; SQL statement:
+alter table ITEMS add constraint FK12chxwfhiy28776m9ylsxnxya foreign key (order) references ORDERS [42001-200]
+2020-10-20 14:44:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+insert into ITEMS (order_id, product, quantity, id) values (?, ?, ?, ?) [42102-200]
+2020-10-20 14:44:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ITEMS (ID INTEGER NOT NULL, QUANTITY DOUBLE, ORDER[*] INTEGER NOT NULL, PRODUCT INTEGER NOT NULL, PRIMARY KEY (ID))"; expected "identifier"; SQL statement:
+create table ITEMS (id integer not null, quantity double, order integer not null, product integer not null, primary key (id)) [42001-200]
+2020-10-20 14:44:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE ITEMS ADD CONSTRAINT FK12CHXWFHIY28776M9YLSXNXYA FOREIGN KEY (ORDER[*]) REFERENCES ORDERS"; expected "identifier"; SQL statement:
+alter table ITEMS add constraint FK12chxwfhiy28776m9ylsxnxya foreign key (order) references ORDERS [42001-200]
+2020-10-20 14:44:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+alter table ITEMS add constraint FK8y5igib0mq1mccni9idgysu6t foreign key (product) references PRODUCTS [42102-200]
+2020-10-20 14:44:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+insert into ITEMS (order, product, quantity, id) values (?, ?, ?, ?) [42102-200]
+2020-10-20 14:46:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ITEMS (ID INTEGER NOT NULL, QUANTITY DOUBLE, ORDER[*] INTEGER NOT NULL, PRODUCT INTEGER NOT NULL, PRIMARY KEY (ID))"; expected "identifier"; SQL statement:
+create table ITEMS (id integer not null, quantity double, order integer not null, product integer not null, primary key (id)) [42001-200]
+2020-10-20 14:46:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE ITEMS ADD CONSTRAINT FK12CHXWFHIY28776M9YLSXNXYA FOREIGN KEY (ORDER[*]) REFERENCES ORDERS"; expected "identifier"; SQL statement:
+alter table ITEMS add constraint FK12chxwfhiy28776m9ylsxnxya foreign key (order) references ORDERS [42001-200]
+2020-10-20 14:46:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+alter table ITEMS add constraint FK8y5igib0mq1mccni9idgysu6t foreign key (product) references PRODUCTS [42102-200]
+2020-10-20 14:46:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT ITEM0_.ID AS ID1_2_, ITEM0_.ORDER[*] AS ORDER3_2_, ITEM0_.PRODUCT AS PRODUCT4_2_, ITEM0_.QUANTITY AS QUANTITY2_2_ FROM ITEMS ITEM0_"; expected "identifier"; SQL statement:
+select item0_.id as id1_2_, item0_.order as order3_2_, item0_.product as product4_2_, item0_.quantity as quantity2_2_ from ITEMS item0_ [42001-200]
+2020-10-20 14:48:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ITEMS (ID INTEGER NOT NULL, QUANTITY DOUBLE, ORDER_ID INTEGER NOT NULL, PRODUCT_ID INTEGER NOT NULL, ORDER[*] INTEGER, PRIMARY KEY (ID))"; expected "identifier"; SQL statement:
+create table ITEMS (id integer not null, quantity double, order_id integer not null, product_id integer not null, order integer, primary key (id)) [42001-200]
+2020-10-20 14:48:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+alter table ITEMS add constraint FKsdrhj7c1j4jmtofdfsic7df21 foreign key (order_id) references ORDERS [42102-200]
+2020-10-20 14:48:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+alter table ITEMS add constraint FKr83rdgrmnuc1t76a2j4r6nr5r foreign key (product_id) references PRODUCTS [42102-200]
+2020-10-20 14:48:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE ITEMS ADD CONSTRAINT FK12CHXWFHIY28776M9YLSXNXYA FOREIGN KEY (ORDER[*]) REFERENCES ORDERS"; expected "identifier"; SQL statement:
+alter table ITEMS add constraint FK12chxwfhiy28776m9ylsxnxya foreign key (order) references ORDERS [42001-200]
+2020-10-20 14:48:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+insert into ITEMS (order_id, product_id, quantity, id) values (?, ?, ?, ?) [42102-200]
+2020-10-20 14:49:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ITEMS (ID INTEGER NOT NULL, QUANTITY DOUBLE, ORDER_ID INTEGER NOT NULL, PRODUCT_ID INTEGER NOT NULL, ORDER[*] INTEGER, PRIMARY KEY (ID))"; expected "identifier"; SQL statement:
+create table ITEMS (id integer not null, quantity double, order_id integer not null, product_id integer not null, order integer, primary key (id)) [42001-200]
+2020-10-20 14:49:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+alter table ITEMS add constraint FKsdrhj7c1j4jmtofdfsic7df21 foreign key (order_id) references ORDERS [42102-200]
+2020-10-20 14:49:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+alter table ITEMS add constraint FKr83rdgrmnuc1t76a2j4r6nr5r foreign key (product_id) references PRODUCTS [42102-200]
+2020-10-20 14:49:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE ITEMS ADD CONSTRAINT FK12CHXWFHIY28776M9YLSXNXYA FOREIGN KEY (ORDER[*]) REFERENCES ORDERS"; expected "identifier"; SQL statement:
+alter table ITEMS add constraint FK12chxwfhiy28776m9ylsxnxya foreign key (order) references ORDERS [42001-200]
+2020-10-20 14:49:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+insert into ITEMS (order_id, product_id, quantity, id) values (?, ?, ?, ?) [42102-200]

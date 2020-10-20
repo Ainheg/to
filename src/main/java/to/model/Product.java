@@ -14,8 +14,7 @@ public class Product {
     @Column(name = "name")
     private String name;
 
-    @OneToMany
-    @JoinColumn(name = "product_id")
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
     private Set<Item> items;
 
     public Product() {
