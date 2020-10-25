@@ -11,8 +11,8 @@ import org.hibernate.Transaction;
 import to.model.*;
 
 public class App {
-  public static void main(String[] args) {
-    DataGenerator.generate();
+  public static void startExample() {
+    DataManager.generate();
     exampleQuery();
     HibernateUtil.shutdown();
   }
