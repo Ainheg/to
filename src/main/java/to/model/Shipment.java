@@ -7,17 +7,25 @@ import javax.persistence.*;
 public class Shipment {
     @Id
     @GeneratedValue
-    @Column(name = "id")
+    @Column(name = "id", nullable = false)
     private int id;
 
     @OneToOne
     @JoinColumn(name = "order_id", nullable = false)
     private Order order;
 
-    @Column(name = "address")
+    @Column(name = "address", nullable = false)
     private String address;
 
     public Shipment() {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public Order getOrder() {

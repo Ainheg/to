@@ -9,19 +9,19 @@ import javax.persistence.*;
 public class Employee {
     @Id
     @GeneratedValue
-    @Column(name = "id")
+    @Column(name = "id", nullable = false)
     private int id;
 
-    @Column(name = "name")
+    @Column(name = "name", nullable = false)
     private String name;
 
-    @Column(name = "surname")
+    @Column(name = "surname", nullable = false)
     private String surname;
 
-    @Column(name = "email_address")
+    @Column(name = "email_address", nullable = false)
     private String emailAddress;
 
-    @Column(name = "phone_number")
+    @Column(name = "phone_number", nullable = true)
     private String phoneNumber;
 
     @OneToMany(mappedBy = "employee", cascade = CascadeType.ALL)

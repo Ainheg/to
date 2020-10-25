@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class Item {
     @Id
     @GeneratedValue
-    @Column(name = "id")
+    @Column(name = "id", nullable = false)
     private int id;
 
     @ManyToOne
@@ -22,6 +22,13 @@ public class Item {
     private Double quantity;
 
     public Item() {
+    }
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public Order getOrder() {
